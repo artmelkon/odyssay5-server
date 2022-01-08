@@ -1,0 +1,25 @@
+{
+  "name": "catstronauts-server-complete",
+  "version": "1.0.0",
+  "description": "back-end demo app for Apollo's lift-off IV course",
+  "main": "src/server.js",
+  "scripts": {
+    "start:server": "node src/server",
+    "dev:server": "nodemon src/server",
+    "client": "cd ../client && npm start",
+    "dev": "concurrently -n dev:server,client \"npm run dev:server\" \"npm run client\""
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.11.0",
+    "apollo-server": "^3.0.0",
+    "concurrently": "^7.0.0",
+    "graphql": "^15.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "author": "Raphael Terrier @R4ph-t",
+  "license": "MIT",
+  "private": true
+}
