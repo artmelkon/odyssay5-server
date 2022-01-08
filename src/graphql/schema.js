@@ -64,7 +64,7 @@ const typeDefs = gql`
     "The module's title"
     title: String!
     "The module's length in seconds"
-    length: Intv @deprecated(reason: "Use durationInSeconds")
+    length: Int @deprecated(reason: "Use durationInSeconds")
     "The module's video duration, in seconds"
     durationInSeconds: Int
     "The module's text-based description, can be in markdown format. In case of a video, it will be the enriched transcript"
